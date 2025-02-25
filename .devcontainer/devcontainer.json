@@ -1,0 +1,6 @@
+{
+  "name": "RStudio",
+  "image": "rocker/rstudio:latest",
+  "forwardPorts": [8787],
+  "postCreateCommand": "R -e 'install.packages(c(\"languageserver\", \"renv\"))'"
+}
